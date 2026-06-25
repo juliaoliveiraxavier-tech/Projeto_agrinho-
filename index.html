@@ -3,70 +3,122 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Green Vision</title>
+<title>EcoNova</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
 
-<div id="particles"></div>
+<div class="background-animation"></div>
 
 <header>
 <nav>
-<div class="logo">
-🌎 Green Vision
-</div>
+<div class="logo">🌿 EcoNova</div>
 
 <ul>
 <li><a href="#inicio">Início</a></li>
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#solucoes">Soluções</a></li>
 <li><a href="#impacto">Impacto</a></li>
-<li><a href="#acoes">Ações</a></li>
-<li><a href="#estatisticas">Dados</a></li>
 <li><a href="#contato">Contato</a></li>
 </ul>
-
-<button id="darkToggle">
-<i class="fas fa-moon"></i>
-</button>
-
 </nav>
 </header>
 
-<section id="inicio" class="hero">
+<section class="hero" id="inicio">
 
-<div class="hero-text">
+<div class="hero-content">
 
-<span class="badge">
-♻ Sustentabilidade Global
+<span class="tag">
+Sustentabilidade Inteligente
 </span>
 
 <h1>
-Transformando o Futuro
-através da Sustentabilidade
+Tecnologia e Natureza
+para Construir o Amanhã
 </h1>
 
 <p>
-A tecnologia e a consciência ambiental podem
-construir um planeta mais verde para as
-próximas gerações.
+Promovendo inovação sustentável,
+energia limpa e preservação ambiental
+para um futuro mais verde.
 </p>
 
-<div class="hero-buttons">
-<button class="primary">Explorar</button>
-<button class="secondary">Saiba Mais</button>
+<a href="#sobre" class="btn">
+Explorar
+</a>
+
+</div>
+
+</section>
+
+<section id="sobre">
+
+<h2>Quem Somos</h2>
+
+<div class="about-grid">
+
+<div class="glass-card">
+<h3>🌎 Missão</h3>
+<p>
+Criar soluções sustentáveis para
+melhorar a qualidade de vida.
+</p>
+</div>
+
+<div class="glass-card">
+<h3>♻ Visão</h3>
+<p>
+Transformar comunidades através
+da inovação ambiental.
+</p>
+</div>
+
+<div class="glass-card">
+<h3>🌱 Valores</h3>
+<p>
+Respeito ao planeta,
+educação e responsabilidade social.
+</p>
 </div>
 
 </div>
 
-<div class="hero-image">
-<img src="https://images.unsplash.com/photo-1473773508845-188df298d2d1?w=1000">
+</section>
+
+<section id="solucoes">
+
+<h2>Soluções Sustentáveis</h2>
+
+<div class="solutions">
+
+<div class="solution-card">
+🌞
+<h3>Energia Solar</h3>
+<p>Fontes limpas para reduzir emissões.</p>
+</div>
+
+<div class="solution-card">
+💧
+<h3>Água Inteligente</h3>
+<p>Monitoramento e economia hídrica.</p>
+</div>
+
+<div class="solution-card">
+🚲
+<h3>Mobilidade Verde</h3>
+<p>Transporte sustentável e acessível.</p>
+</div>
+
+<div class="solution-card">
+🌳
+<h3>Reflorestamento</h3>
+<p>Recuperação de áreas degradadas.</p>
+</div>
+
 </div>
 
 </section>
@@ -75,78 +127,45 @@ próximas gerações.
 
 <h2>Nosso Impacto</h2>
 
-<div class="cards">
+<div class="numbers">
 
-<div class="card">
-<i class="fas fa-tree"></i>
-<h3>Reflorestamento</h3>
-<p>Milhares de árvores plantadas.</p>
-</div>
-
-<div class="card">
-<i class="fas fa-solar-panel"></i>
-<h3>Energia Limpa</h3>
-<p>Projetos sustentáveis de energia.</p>
-</div>
-
-<div class="card">
-<i class="fas fa-recycle"></i>
-<h3>Reciclagem</h3>
-<p>Redução massiva de resíduos.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="estatisticas">
-
-<div class="stats">
-
-<div>
+<div class="number">
 <h3 class="counter" data-target="250">0</h3>
-<p>Mil Árvores</p>
+<p>Mil Árvores Plantadas</p>
 </div>
 
-<div>
+<div class="number">
+<h3 class="counter" data-target="80">0</h3>
+<p>% de Reciclagem</p>
+</div>
+
+<div class="number">
+<h3 class="counter" data-target="150">0</h3>
+<p>Projetos Concluídos</p>
+</div>
+
+<div class="number">
 <h3 class="counter" data-target="95">0</h3>
 <p>% Energia Renovável</p>
 </div>
 
-<div>
-<h3 class="counter" data-target="80">0</h3>
-<p>% Reciclagem</p>
-</div>
-
-<div>
-<h3 class="counter" data-target="500">0</h3>
-<p>Projetos</p>
-</div>
-
 </div>
 
 </section>
 
-<section id="acoes">
+<section class="gallery">
 
-<h2>Ações Sustentáveis</h2>
+<h2>Galeria Verde</h2>
 
-<div class="timeline">
+<div class="gallery-grid">
 
-<div class="item">
-<h3>🌱 Plante árvores</h3>
-<p>Ajude a recuperar áreas degradadas.</p>
-</div>
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
 
-<div class="item">
-<h3>🚲 Use bicicleta</h3>
-<p>Diminua sua emissão de carbono.</p>
-</div>
+<img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e">
 
-<div class="item">
-<h3>💡 Economize energia</h3>
-<p>Use iluminação LED.</p>
-</div>
+<img src="https://images.unsplash.com/photo-1473773508845-188df298d2d1">
+
+<img src="https://images.unsplash.com/photo-1511497584788-876760111969">
 
 </div>
 
@@ -154,18 +173,18 @@ próximas gerações.
 
 <section id="contato">
 
-<h2>Participe</h2>
+<h2>Entre em Contato</h2>
 
-<form id="formulario">
+<form id="contactForm">
 
-<input type="text" placeholder="Nome">
+<input type="text" placeholder="Seu nome" required>
 
-<input type="email" placeholder="Email">
+<input type="email" placeholder="Seu email" required>
 
 <textarea placeholder="Mensagem"></textarea>
 
 <button type="submit">
-Enviar
+Enviar Mensagem
 </button>
 
 </form>
@@ -173,7 +192,7 @@ Enviar
 </section>
 
 <footer>
-<p>© 2026 Green Vision</p>
+<p>© 2026 EcoNova | Sustentabilidade e Inovação</p>
 </footer>
 
 <script src="script.js"></script>
