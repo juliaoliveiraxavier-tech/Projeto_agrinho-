@@ -1,201 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EcoNova</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSphere | O Futuro é Consciente</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontes elegantes do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="background-animation"></div>
+    <!-- Fundo Fluido com Efeito de Vidro (Glassmorphism) -->
+    <div class="blur-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
 
-<header>
-<nav>
-<div class="logo">🌿 EcoNova</div>
+    <!-- Navegação -->
+    <header>
+        <div class="logo">EcoSphere<span>.</span></div>
+        <nav>
+            <a href="#home">Início</a>
+            <a href="#galeria">Manifesto</a>
+            <a href="#interacao">Seu Impacto</a>
+        </nav>
+    </header>
 
-<ul>
-<li><a href="#inicio">Início</a></li>
-<li><a href="#sobre">Sobre</a></li>
-<li><a href="#solucoes">Soluções</a></li>
-<li><a href="#impacto">Impacto</a></li>
-<li><a href="#contato">Contato</a></li>
-</ul>
-</nav>
-</header>
+    <main>
+        <!-- Seção Hero (Introdução) -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Moldando o amanhã com a <span>natureza</span> hoje.</h1>
+                <p>A sustentabilidade não é um objetivo distante, é a harmonia que criamos no presente. Explore o movimento, mude a sua pegada.</p>
+                <a href="#interacao" class="btn-primary">Calcule Seu Impacto</a>
+            </div>
+        </section>
 
-<section class="hero" id="inicio">
+        <!-- Seção Galeria/Imagens Criativas -->
+        <section id="galeria" class="gallery-section">
+            <h2 class="section-title">Nosso Manifesto Visual</h2>
+            <div class="grid-gallery">
+                <div class="card card-1">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=800" alt="Energia Limpa">
+                    <div class="card-overlay">
+                        <h3>Energia Renovável</h3>
+                        <p>O poder do sol e dos ventos movendo indústrias limpas.</p>
+                    </div>
+                </div>
+                <div class="card card-2">
+                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&q=80&w=800" alt="Florestas Preservadas">
+                    <div class="card-overlay">
+                        <h3>Preservação Vital</h3>
+                        <p>Proteger nossos biomas é garantir o oxigênio do amanhã.</p>
+                    </div>
+                </div>
+                <div class="card card-3">
+                    <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=800" alt="Consumo Consciente">
+                    <div class="card-overlay">
+                        <h3>Consumo Circular</h3>
+                        <p>Reduzir, reutilizar e repensar cada ciclo de vida do produto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<div class="hero-content">
+        <!-- Seção de Interatividade (Calculadora Eco) -->
+        <section id="interacao" class="interactive-section">
+            <div class="interactive-box">
+                <h2>Simulador de Impacto Positivo</h2>
+                <p>Pequenas mudanças geram grandes resultados. Ajuste os controles abaixo e veja quantas árvores você pouparia em um ano!</p>
+                
+                <div class="controls">
+                    <div class="control-group">
+                        <label for="car-km">Dias na semana que deixa o carro em casa:</label>
+                        <input type="range" id="car-km" min="0" max="7" value="0">
+                        <span id="car-val" class="range-value">0 dias</span>
+                    </div>
 
-<span class="tag">
-Sustentabilidade Inteligente
-</span>
+                    <div class="control-group">
+                        <label for="plastic-bags">Sacolas plásticas evitadas por semana:</label>
+                        <input type="range" id="plastic-bags" min="0" max="30" value="0">
+                        <span id="plastic-val" class="range-value">0 sacolas</span>
+                    </div>
+                </div>
 
-<h1>
-Tecnologia e Natureza
-para Construir o Amanhã
-</h1>
+                <div class="result-display">
+                    <h3>Seu Impacto Equivalente:</h3>
+                    <div class="trees-result"><span id="tree-counter">0</span> Árvores salvas/ano</div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<p>
-Promovendo inovação sustentável,
-energia limpa e preservação ambiental
-para um futuro mais verde.
-</p>
+    <footer>
+        <p>&copy; 2026 EcoSphere. Design para um futuro sustentável.</p>
+    </footer>
 
-<a href="#sobre" class="btn">
-Explorar
-</a>
-
-</div>
-
-</section>
-
-<section id="sobre">
-
-<h2>Quem Somos</h2>
-
-<div class="about-grid">
-
-<div class="glass-card">
-<h3>🌎 Missão</h3>
-<p>
-Criar soluções sustentáveis para
-melhorar a qualidade de vida.
-</p>
-</div>
-
-<div class="glass-card">
-<h3>♻ Visão</h3>
-<p>
-Transformar comunidades através
-da inovação ambiental.
-</p>
-</div>
-
-<div class="glass-card">
-<h3>🌱 Valores</h3>
-<p>
-Respeito ao planeta,
-educação e responsabilidade social.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="solucoes">
-
-<h2>Soluções Sustentáveis</h2>
-
-<div class="solutions">
-
-<div class="solution-card">
-🌞
-<h3>Energia Solar</h3>
-<p>Fontes limpas para reduzir emissões.</p>
-</div>
-
-<div class="solution-card">
-💧
-<h3>Água Inteligente</h3>
-<p>Monitoramento e economia hídrica.</p>
-</div>
-
-<div class="solution-card">
-🚲
-<h3>Mobilidade Verde</h3>
-<p>Transporte sustentável e acessível.</p>
-</div>
-
-<div class="solution-card">
-🌳
-<h3>Reflorestamento</h3>
-<p>Recuperação de áreas degradadas.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="impacto">
-
-<h2>Nosso Impacto</h2>
-
-<div class="numbers">
-
-<div class="number">
-<h3 class="counter" data-target="250">0</h3>
-<p>Mil Árvores Plantadas</p>
-</div>
-
-<div class="number">
-<h3 class="counter" data-target="80">0</h3>
-<p>% de Reciclagem</p>
-</div>
-
-<div class="number">
-<h3 class="counter" data-target="150">0</h3>
-<p>Projetos Concluídos</p>
-</div>
-
-<div class="number">
-<h3 class="counter" data-target="95">0</h3>
-<p>% Energia Renovável</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="gallery">
-
-<h2>Galeria Verde</h2>
-
-<div class="gallery-grid">
-
-<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
-
-<img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e">
-
-<img src="https://images.unsplash.com/photo-1473773508845-188df298d2d1">
-
-<img src="https://images.unsplash.com/photo-1511497584788-876760111969">
-
-</div>
-
-</section>
-
-<section id="contato">
-
-<h2>Entre em Contato</h2>
-
-<form id="contactForm">
-
-<input type="text" placeholder="Seu nome" required>
-
-<input type="email" placeholder="Seu email" required>
-
-<textarea placeholder="Mensagem"></textarea>
-
-<button type="submit">
-Enviar Mensagem
-</button>
-
-</form>
-
-</section>
-
-<footer>
-<p>© 2026 EcoNova | Sustentabilidade e Inovação</p>
-</footer>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
